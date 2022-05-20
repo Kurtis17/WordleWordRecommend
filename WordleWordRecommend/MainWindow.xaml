@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WordleWordRecommend"
         mc:Ignorable="d"
         Background="DimGray"
-        Title="Main" Height="450" Width="800">
+        Title="Main Page" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
