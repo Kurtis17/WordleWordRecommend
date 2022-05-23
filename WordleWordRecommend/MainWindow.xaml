@@ -5,13 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WordleWordRecommend"
         mc:Ignorable="d"
-        Background="DimGray"
+        WindowStartupLocation="CenterScreen"
+        Background="Black"
         Title="Main Page" Height="450" Width="800">
     <Grid>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="350"/>
-            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="700"/>
         </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.Column="0" Margin="0" Background="White">
+            <StackPanel>
+                <Image Source="wordleWhite.png"></Image>
+                <Button Content="{Binding PlayGameContent}" Command="{Binding InsertByTextCommand}" Margin="2 15 2 10"/>
+                <Button Content="{Binding WordFinderContent}" Command="{Binding InsertByFileCommand}" Margin="2 2 2 10"/>
+            </StackPanel>
+        </DockPanel>
+
+        <ContentControl Content="{Binding ContentControlBindingOne}" Grid.Column="1" Margin="5 5"/>
+
     </Grid>
 </Window>
